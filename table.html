@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="ru">
+<title>
+    <meta charset="utf-8">
+
+    <head>
+        Таблица
+    </head>
+</title>
+
+<body>
+    <a href="begin.html">
+        <small>Самые лучшие автомобили</small>
+    </a><br>
+    <a href="table.html">
+        <big>Список самых лучших автомобилей</big>
+    </a>
+    <hr>
+    <details>
+        <summary>
+            График
+        </summary>
+        <form>
+            <b>Значение по оси OX</b>
+            <b>Результат</b>
+            <p>
+                <label><input type="radio" name="type" value="y">Год</label>
+                <label><input type="checkbox" name="type" value="y">Минимальный объём двигателя</label>
+                <label><input type="radio" name="type" value="c">Страна</label>
+                <label><input type="radio" name="type" value="m">Двигатель</label>
+                <label><input type="checkbox" name="type" value="c">Максимальный объем двигателя</label>
+                <label><input type="checkbox" name="type" value="y">Минимальный объём двигателя</label>
+                <label><input type="checkbox" name="type" value="m">Среднее время разгона автомобиля до 100 км/ч</label>
+            </p>
+            <input type="button" value="Построить">
+        </form>
+        <p>
+            График
+        </p>
+    </details>
+    <details>
+        <summary>
+            Фильтр
+        </summary>
+        <form>
+            <p>
+                <label>Название:
+                    <input type="text" id="name">
+                </label>
+            </p>
+            <p>
+                <label>Год: от
+                    <input type="text" id="year">
+                </label>
+                <label>до
+                    <input type="text" id="vm">
+                </label>
+            </p>
+            <p>
+                <label>Страна:
+                    <input type="text" id="Country">
+                </label>
+            </p>
+            <p>
+                <label>Модель двигателя:
+                    <input type="text" id="mm">
+                </label>
+            </p>
+            <p>
+                <label>Объём двигателя: от
+                    <input type="text" id="vmm">
+                </label>
+                <label>до
+                    <input type="text" id="vmmm">
+                </label>
+            </p>
+            <p>
+                <label>Разгон автомобиля до 100 км/ч:
+                    <input type="text" id="namik">
+                </label>
+            </p>
+            <input type="button" value="Найти">
+        </form>
+    </details>
+    <details>
+        <form>
+            <summary>
+                Сортировка
+            </summary>
+            <p>
+                Первый уровень:
+                <select name="language">
+                    <option value="0" selected> Нет </option>
+                    <option value="1">Название</option>
+                    <option value="2">Год</option>
+                    <option value="3">Страна</option>
+                    <option value="4">Модель двигателя</option>
+                    <option value="5">Объём двигателя</option>
+                    <option value="6">Разгон автомобиля до 100 км/ч</option>
+                </select>
+                по убыванию? <input type="checkbox" name="type" value="r">
+            </p>
+            <p>
+                Второй уровень:
+                <select name="language">
+                    <option value="0" selected> Нет </option>
+                    <option value="1">Название</option>
+                    <option value="2">Год</option>
+                    <option value="3">Страна</option>
+                    <option value="4">Модель двигателя</option>
+                    <option value="5">Объём двигателя</option>
+                    <option value="6">Разгон автомобиля до 100 км/ч</option>
+                </select>
+                по убыванию?
+                <input type="checkbox" name="type" value="m">
+            </p>
+            <p>
+                Третий уровень:
+                <select name="language">
+                    <option value="0" selected> Нет </option>
+                    <option value="1">Название</option>
+                    <option value="2">Год</option>
+                    <option value="3">Страна</option>
+                    <option value="4">Модель двигателя</option>
+                    <option value="5">Объём двигателя</option>
+                    <option value="6">Разгон автомобиля до 100 км/ч</option>
+                </select>
+                по убыванию?
+                <input type="checkbox" name="type" value="s">
+            </p>
+            <input type="button" value="Сортировать">
+        </form>
+    </details>
+    <table border="2" cellspacing="0" cellpadding="5">
+        <tr>
+            <td><b>Название</b></td>
+            <td><b>Год</b></td>
+            <td><b>Страна</b></td>
+            <td><b>Модель двигателя</b></td>
+            <td><b>Объём двигателя (л)</b></td>
+            <td><b>Разгон автомобиля до 100 км/ч (с)</b></td>
+        </tr>
+        <tr>
+            <td>Bugatti Veyron</td>
+            <td>2005</td>
+            <td>Франция</td>
+            <td>W16, 4 турбонагнетателя</td>
+            <td>8.0</td>
+            <td>2.5 </td>
+        </tr>
+        <tr>
+            <td>Volkswagen Golf GTI</td>
+            <td>2005</td>
+            <td>Германия</td>
+            <td>R4 TFSI</td>
+            <td>2.0</td>
+            <td>7.2</td>
+        </tr>
+        <tr>
+            <td>Rolls-Royce Phantom</td>
+            <td>2003</td>
+            <td>Великобритания</td>
+            <td>V12</td>
+            <td>6.75</td>
+            <td>5.9</td>
+        </tr>
+        <tr>
+            <td>Ferrari 458 Italia</td>
+            <td>2009</td>
+            <td>Италия</td>
+            <td>V8 атмосферный</td>
+            <td>4.5</td>
+            <td>3.4</td>
+        </tr>
+        <tr>
+            <td>Porsche Boxster (986)</td>
+            <td>1996</td>
+            <td>Германия</td>
+            <td>Оппозитный R6</td>
+            <td>2.5</td>
+            <td>6.9</td>
+        </tr>
+        <tr>
+            <td>BMW 320d (E46)</td>
+            <td>1999</td>
+            <td>Германия</td>
+            <td>R4 турбодизель</td>
+            <td>2.0</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>Ford Focus (Mk1)</td>
+            <td>1998</td>
+            <td>США</td>
+            <td>R4 бензин</td>
+            <td>2.0</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>Porsche 911 (993)</td>
+            <td>1993</td>
+            <td>Германия</td>
+            <td>Оппозитный R6</td>
+            <td>3.6</td>
+            <td>5.3</td>
+        </tr>
+        <tr>
+            <td>Renault Clio Williams</td>
+            <td>1993</td>
+            <td>Франция</td>
+            <td>R4 атмосферный</td>
+            <td>2.0</td>
+            <td>7.8</td>
+        </tr>
+        <tr>
+            <td>Lexus LFA</td>
+            <td>2010</td>
+            <td>Япония</td>
+            <td>V10 атмосферный</td>
+            <td>4.8</td>
+            <td>3.7</td>
+        </tr>
+        <tr>
+            <td>Toyota Prius (XW20)</td>
+            <td>2004</td>
+            <td>Япония</td>
+            <td>Гибрид (R4 + электродвигатель)</td>
+            <td>1.5</td>
+            <td>10.9</td>
+        </tr>
+        <tr>
+            <td>Mini Cooper (R50)</td>
+            <td>2001</td>
+            <td>Великобритания</td>
+            <td>R4 атмосферный</td>
+            <td>1.6</td>
+            <td>9.2</td>
+        </tr>
+        <tr>
+            <td>Nissan GT-R (R35)</td>
+            <td>2008</td>
+            <td>Япония</td>
+            <td>V6 битурбо</td>
+            <td>3.8</td>
+            <td>3.5</td>
+        </tr>
+        <tr>
+            <td>Ford Fiesta ST</td>
+            <td>2012</td>
+            <td>Германия</td>
+            <td>R4 турбо EcoBoost</td>
+            <td>1.6</td>
+            <td>6.9</td>
+        </tr>
+        <tr>
+            <td>Mitsubishi Lancer Evo VI Tommi Mäkinen</td>
+            <td>2000</td>
+            <td>Япония</td>
+            <td>R4 турбо</td>
+            <td>2.0</td>
+            <td>4.6</td>
+        </tr>
+        <tr>
+            <td>Subaru Impreza P1</td>
+            <td>1999</td>
+            <td>Япония</td>
+            <td>Оппозитный R4 турбо</td>
+            <td>2.0</td>
+            <td>4.6</td>
+        </tr>
+        <tr>
+            <td>Pagani Zonda (C12/C12S)</td>
+            <td>1999</td>
+            <td>Италия</td>
+            <td>V12 атмосферный (AMG)</td>
+            <td>7.0</td>
+            <td>3.9</td>
+        </tr>
+        <tr>
+            <td>Ariel Atom (Mk1)</td>
+            <td>2000</td>
+            <td>Великобритания</td>
+            <td>R4 атмосферный (Honda)</td>
+            <td>2.0</td>
+            <td>3.0</td>
+        </tr>
+        <tr>
+            <td>Range Rover (L405)</td>
+            <td>2012</td>
+            <td>Великобритания</td>
+            <td>V6/V8 бензин или дизель</td>
+            <td>3.0</td>
+            <td>4.7</td>
+        </tr>
+        <tr>
+            <td>Lamborghini Murciélago LP-670-4 SV</td>
+            <td>2009</td>
+            <td>Италия</td>
+            <td>V12 атмосферный</td>
+            <td>6.5</td>
+            <td>3.2</td>
+        </tr>
+        <tr>
+            <td>Honda S2000 (AP1)</td>
+            <td>1999</td>
+            <td>Япония</td>
+            <td>R4 атмосферный VTEC</td>
+            <td>2.0</td>
+            <td>6.2</td>
+        </tr>
+        <tr>
+            <td>Toyota Hilux</td>
+            <td>1997</td>
+            <td>Япония</td>
+            <td>R4 дизель/бензин</td>
+            <td>3.0</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>Audi A2</td>
+            <td>1999</td>
+            <td>Германия</td>
+            <td>R3/R4 бензин/дизель</td>
+            <td>1.2</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>Bentley Continental GT</td>
+            <td>2003</td>
+            <td>Великобритания</td>
+            <td>W12 битурбо</td>
+            <td>6.0</td>
+            <td>4.7</td>
+        </tr>
+        <tr>
+            <td>Audi TT (8N)</td>
+            <td>1998</td>
+            <td>Германия</td>
+            <td>R4 1.8T / V6 3.2</td>
+            <td>1.8</td>
+            <td>7.4</td>
+        </tr>
+        <tr>
+            <td>Mercedes-Benz S-класс (W221)</td>
+            <td>2005</td>
+            <td>Германия</td>
+            <td>V6/V8/V12</td>
+            <td>3.0</td>
+            <td>4.6</td>
+        </tr>
+        <tr>
+            <td>Land Rover Discovery 3 (LR3)</td>
+            <td>2004</td>
+            <td>Великобритания</td>
+            <td>V6 дизель / V8 бензин</td>
+            <td>2.7</td>
+            <td>11</td>
+        </tr>
+        <tr>
+            <td>Fiat 500 (Nuova)</td>
+            <td>2007</td>
+            <td>Италия</td>
+            <td>R2/R4 бензин/дизель</td>
+            <td>1.4</td>
+            <td>13</td>
+        </tr>
+        <tr>
+            <td>McLaren MP4-12C Spider</td>
+            <td>2012</td>
+            <td>Великобритания</td>
+            <td>V8 битурбо</td>
+            <td>3.8</td>
+            <td>3.1</td>
+        </tr>
+        <tr>
+            <td>Aston Martin V12 Vantage</td>
+            <td>2009</td>
+            <td>Великобритания</td>
+            <td>V12 атмосферный</td>
+            <td>6.0</td>
+            <td>4.2</td>
+        </tr>
+        <tr>
+            <td>Ferrari Enzo</td>
+            <td>2002</td>
+            <td>Италия</td>
+            <td>V12 атмосферный</td>
+            <td>6.0</td>
+            <td>3.6</td>
+        </tr>
+        <tr>
+            <td>Porsche Carrera GT</td>
+            <td>2004</td>
+            <td>Германия</td>
+            <td>V10 атмосферный</td>
+            <td>5.7</td>
+            <td>3.9</td>
+        </tr>
+        <tr>
+            <td>Lotus Elise (S1)</td>
+            <td>1996</td>
+            <td>Великобритания</td>
+            <td>R4 атмосферный</td>
+            <td>1.8</td>
+            <td>6.5</td>
+        </tr>
+        <tr>
+            <td>BMW 5-я серия (E39)</td>
+            <td>1998</td>
+            <td>Германия</td>
+            <td>R6/V8 (различные)</td>
+            <td>2.0</td>
+            <td>7.5</td>
+        </tr>
+        <tr>
+            <td>Lancia Delta Integrale Evo III</td>
+            <td>1993</td>
+            <td>Италия</td>
+            <td>R4 турбо</td>
+            <td>2.0</td>
+            <td>5.7</td>
+        </tr>
+        <tr>
+            <td>Ferrari 550 Maranello</td>
+            <td>1996</td>
+            <td>Италия</td>
+            <td>V12 атмосферный</td>
+            <td>5.5</td>
+            <td>4.4</td>
+        </tr>
+        <tr>
+            <td>Toyota GT86</td>
+            <td>2012</td>
+            <td>Япония</td>
+            <td>Оппозитный R4 атмосферный</td>
+            <td>2.0</td>
+            <td>7.6</td>
+        </tr>
+        <tr>
+            <td>Mercedes-Benz CLK 63 AMG Black Series</td>
+            <td>2008</td>
+            <td>Германия</td>
+            <td>V8 атмосферный</td>
+            <td>6.2</td>
+            <td>4.0</td>
+        </tr>
+        <tr>
+            <td>Jaguar F-Type V6 S</td>
+            <td>2013</td>
+            <td>Великобритания</td>
+            <td>V6 компрессор</td>
+            <td>3.0</td>
+            <td>≈ 4.9</td>
+        </tr>
+        <tr>
+            <td>Fiat Multipla</td>
+            <td>1998</td>
+            <td>Италия</td>
+            <td>R4 бензин/дизель</td>
+            <td>1.9</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>Ford GT</td>
+            <td>2004</td>
+            <td>США</td>
+            <td>V8 компрессор</td>
+            <td>5.4</td>
+            <td>3.8</td>
+        </tr>
+        <tr>
+            <td>Alfa Romeo 8C Spider</td>
+            <td>2009</td>
+            <td>Италия</td>
+            <td>V8 атмосферный</td>
+            <td>4.7</td>
+            <td>4.5</td>
+        </tr>
+        <tr>
+            <td>Mazda MX-5 (NC)</td>
+            <td>2005</td>
+            <td>Япония</td>
+            <td>R4 атмосферный</td>
+            <td>1.8</td>
+            <td>≈ 7.9</td>
+        </tr>
+        <tr>
+            <td>Ferrari FF</td>
+            <td>2011</td>
+            <td>Италия</td>
+            <td>V12 атмосферный</td>
+            <td>6.3</td>
+            <td>3.7</td>
+        </tr>
+        <tr>
+            <td>BMW X5 (E53)</td>
+            <td>1999</td>
+            <td>Германия</td>
+            <td>R6/V8</td>
+            <td>3.0–</td>
+            <td>7.5</td>
+        </tr>
+        <tr>
+            <td>Honda Integra Type R (DC2)</td>
+            <td>1998</td>
+            <td>Япония</td>
+            <td>R4 атмосферный VTEC</td>
+            <td>1.8</td>
+            <td>6.7</td>
+        </tr>
+        <tr>
+            <td>Lamborghini Gallardo</td>
+            <td>2003</td>
+            <td>Италия</td>
+            <td>V10 атмосферный</td>
+            <td>5.0 л</td>
+            <td>4.2</td>
+        </tr>
+        <tr>
+            <td>Dacia Duster</td>
+            <td>2010</td>
+            <td>Румыния</td>
+            <td>R4 бензин/дизель</td>
+            <td>1.5</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>Opel Ampera</td>
+            <td>2011</td>
+            <td>Германия</td>
+            <td>Электро + ДВС-генератор</td>
+            <td>2.0</td>
+            <td>9.0</td>
+        </tr>
+        <tr>
+            <td>Audi RS2 Avant</td>
+            <td>1994</td>
+            <td>Германия</td>
+            <td>R5 турбо</td>
+            <td>2.2</td>
+            <td>4.8</td>
+        </tr>
+    </table>
+</body>
+
+</html>
