@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Топ автомобилей 21 века</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .wrapper {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .menu {
+            margin: 10px 0;
+            border: 1px solid;
+            border-radius: 6px;
+            padding: 8px;
+            text-align: left;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: blue;
+            margin-right: 8px;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .menu a.active {
+            background: blue;
+            color: white;
+        }
+
+        .top {
+            overflow: hidden;
+            margin: 10px 0;
+        }
+
+        .left {
+            float: left;
+            width: 790px;
+            height: 350px;
+            background: #b3ecff;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .right {
+            float: right;
+            width: 390px;
+        }
+
+        .right img {
+            width: 100%;
+            height: 170px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+        }
+
+        .left img,
+        .wide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .wide {
+            clear: both;
+            margin: 15px 0;
+            height: 300px;
+            border-radius: 10px;
+            overflow: hidden;
+            background: #ffcce0;
+        }
+
+        .card {
+            width: 250px;
+            height: 260px;
+            padding: 10px;
+            margin: 10px;
+            float: left;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .brown {
+            background: #b59b94;
+        }
+
+        .pink {
+            background: #f5b5c3;
+        }
+
+        .card h3 {
+            font-size: 16px;
+            margin: 5px 0;
+        }
+
+        .card .text {
+            height: 70px;
+            margin: 10px 0;
+        }
+
+        .card .image {
+            width: 220px;
+            height: 100px;
+            border-radius: 25px;
+            margin: 0 auto;
+            line-height: 100px;
+        }
+
+        .card a {
+            color: navy;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .h-card {
+            width: 560px;
+            height: 110px;
+            border-radius: 25px;
+            padding: 10px 15px;
+            margin: 10px;
+            overflow: hidden;
+            float: right;
+        }
+
+        .h-card .image {
+            width: 160px;
+            height: 100px;
+            border-radius: 25px;
+            line-height: 100px;
+            text-align: center;
+        }
+
+        .h-card .text-block {
+            width: 340px;
+            border-radius: 25px;
+            display: inline-block;
+            vertical-align: top;
+            font-size: 14px;
+        }
+
+        .h-card a {
+            color: navy;
+            font-size: 13px;
+            text-decoration: none;
+        }
+
+        .h-card h3 {
+            margin-top: 0;
+        }
+
+        .left-image .image {
+            float: left;
+            margin-right: 15px;
+        }
+
+        .right-image .image {
+            float: right;
+            margin-left: 15px;
+        }
+
+        .fnsize {
+            font-size: 15px;
+            text-align: justify;
+        }
+
+        .mar {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            <a href="#" class="active">Меню 1</a><a href="#">Меню 2</a><a href="#">Меню 3</a><a href="#">Меню 4</a>
+        </div>
+
+        <div class="top">
+            <div class="left"><img src="https://s.rdrom.ru/1/pubs/4/25103/1204874.jpg"></div>
+            <div class="right">
+                <img src="https://i.pinimg.com/736x/3d/9b/2c/3d9b2c5f0724bc8ca939c0a664b5587c.jpg">
+                <img
+                    src="https://avatars.mds.yandex.net/i?id=073e55d1f3f793208e2f20bc4047cf17_l-9138034-images-thumbs&n=13">
+            </div>
+        </div>
+
+        <div class="wide"><img src="https://s.rdrom.ru/1/pubs/4/25103/1204872.jpg"></div>
+
+        <div class="cards">
+            <div class="card brown">
+                <h3>McLaren P1</h3>
+                <div class="text fnsize">McLaren P1 — английский суперкар с гибридным двигателем, преемник McLaren F1,
+                    который
+                    производила компания McLaren Automotive.</div>
+                <div class="image"><img
+                        src="https://avatars.mds.yandex.net/i?id=b65dcc60092f06ebb9097701e7cd635bd4911e17-15286282-images-thumbs&n=13 width=100 height=100">
+                </div>
+                <a href="#">Подробнее»</a>
+            </div>
+
+            <div class="card brown">
+                <h3>Bugatti Veyron</h3>
+                <div class="text fnsize">Bugatti Veyron — гиперкар компании Bugatti, производившийся с 2005 по 2015 год.
+                </div>
+                <div class="image"><img
+                        src="https://avatars.mds.yandex.net/i?id=57eda4d86d1470432212df9e1fd42685dd098e7f-4289847-images-thumbs&n=13 width=100 height=80">
+                </div>
+                <a href="#" class="mar">Подробнее»</a>
+            </div>
+
+            <div class="h-card brown left-image">
+                <div class="image"><img
+                        src="https://avatars.mds.yandex.net/i?id=85f55d9d10d973ea92dffe648b24e31c139be20b-16415947-images-thumbs&n=13 width=100 height=100">
+                </div>
+                <div class="text-block">
+                    <h3>Mini Cooper</h3>
+                    <div class="text">Mini — марка малолитражных автомобилей, разработанная в Великобритании компанией
+                        British Motor Corporation. С 1994 года принадлежит концерну BMW.
+                    </div>
+                    <a href="#">Подробнее»</a>
+                </div>
+            </div>
+
+            <div class="h-card brown left-image">
+                <div class="image"><img
+                        src="https://avatars.mds.yandex.net/i?id=52648c3eb782dda71f50e8f45dc409ae_l-5332335-images-thumbs&n=13 width=100 height=100">
+                </div>
+                <div class="text-block">
+                    <h3>Toyota Prius</h3>
+                    <div class="text">Toyota Prius — первый в мире массовый гибридный легковой автомобиль, который
+                        движется за счёт как бензинового, так и электрического двигателей. </div>
+                    <a href="#">Подробнее»</a>
+                </div>
+            </div>
+
+            <div class="card pink">
+                <div class="image"><img
+                        src="https://avatars.mds.yandex.net/i?id=96f6dcde3a1b65d6bd8ed6fb3823eed8_l-16290156-images-thumbs&n=13 width=100 height=100">
+                </div>
+                <h3>Nissan GT-R</h3>
+                <div class="text fnsize">Nissan GT-R — суперкар, выпускаемый компанией Nissan Motor. </div>
+                <a href="#">Подробнее»</a>
+            </div>
+
+            <div class="card pink">
+                <div class="image"><img
+                        src="https://avatars.mds.yandex.net/i?id=17e003ec524357cf717a3d0a76fe25e4_l-5088908-images-thumbs&n=13 width=100 height=100">
+                </div>
+                <h3>Ford Fiesta</h3>
+                <div class="text fnsize">Ford Fiesta — субкомпактный автомобиль, выпускавшийся компанией Ford Motor
+                    Company.</div>
+                <a href="#">Подробнее»</a>
+            </div>
+
+            <div class="h-card pink right-image">
+                <div class="text-block">
+                    <h3>Mitsubishi Lancer</h3>
+                    <div class="text">Mitsubishi Lancer — семейство легковых автомобилей субкомпактного и компактного
+                        класса, выпускавшихся компанией Mitsubishi Motors с 1973 по 2024 год.</div>
+                    <a href="#">Подробнее»</a>
+                </div>
+                <div class="image"><img
+                        src="https://avatars.mds.yandex.net/i?id=fb4e2db359f320db6e6cce6b60c6e6205d029575-5314878-images-thumbs&n=13 width=100 height=100">
+                </div>
+            </div>
+
+            <div class="h-card pink right-image">
+                <div class="text-block">
+                    <h3>Subaru Impreza</h3>
+                    <div class="text">Седан, универсал, купе или хетчбэк японской фирмы Subaru, выпускается с 1992 года.
+                    </div>
+                    <a href="#">Подробнее»</a>
+                </div>
+                <div class="image"><img
+                        src="https://avatars.mds.yandex.net/i?id=94ad984efbd08e9b112be6e2db0ad3519be20446-12679713-images-thumbs&n=13 width=100 height=100">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>2025 1 Акимов. С. Н.</footer>
+    </div>
+</body>
+
+</html>
