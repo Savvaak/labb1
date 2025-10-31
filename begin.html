@@ -2,55 +2,299 @@
 <html lang="ru">
 
 <head>
-    <meta charset="utf-8">
-    <title>
-        Топ автомобилей 21 века
-    </title>
+    <meta charset="UTF-8">
+    <title>Топ автомобилей 21 века</title>
+    <style>
+        body {
+            margin: 0;
+            font-size: 1.3vw;
+        }
+
+        .wrapper_head {
+            width: 120vw;
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 0 1vw;
+        }
+        .wrapper_main{
+            width: 95vw;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 1vw;
+        }
+        .menu {
+            margin: 1vh 0;
+            border: 1px solid;
+            border-radius: 0.5vw;
+            padding: 0.7vh 1vw;
+            text-align: left;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: blue;
+            margin-right: 0.7vw;
+            padding: 0.4vh 0.8vw;
+            border-radius: 0.4vw;
+        }
+
+        .menu a.active {
+            background: blue;
+            color: white;
+        }
+
+        .top {
+            overflow: hidden;
+        }
+
+        .left {
+            float: left;
+            width: 65.5%;
+            height: 30vh;
+            overflow: hidden;
+        }
+
+        .right {
+            float: right;
+            width: 34.5%;
+            height: 15vh;
+        }
+
+        .right img,
+        .left img,
+        .wide img,
+        .card .image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .wide {
+            clear: both;
+            height: 25vh;
+            overflow: hidden;
+        }
+
+        .card {
+            width: 20.5%;
+            height: 22vh;
+            padding: 0.8vh 1vw;
+            margin: 0.8vh;
+            float: left;
+            text-align: center;
+            overflow: hidden;
+            border-radius: 1vw;
+        }
+
+        .brown {
+            background: #b59b94;
+        }
+
+        .pink {
+            background: #f5b5c3;
+        }
+
+        .card h3 {
+            font-size: 1.3vw;
+            margin: 0.4vh 0;
+        }
+
+        .card .text {
+            height: 6vh;
+            margin: 0.8vh 0;
+            font-size: 60%;
+            margin: 1px auto;
+        }
+
+        .card .image {
+            width: 90%;
+            height: 8vh;
+            border-radius: 2vw;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .h-card {
+            width: 42.5%;
+            height: 9.5vh;
+            border-radius: 2vw;
+            padding: 0.8vh 1.2vw;
+            margin: 0.8vh;
+            overflow: hidden;
+            float: right;
+        }
+
+        .h-card .image {
+            width: 100px;
+            height: 80px;
+            border-radius: 2vw;
+            float: left;
+            margin-right: 1vw;
+            overflow: hidden;
+        }
+
+        .h-card.right-image .image {
+            float: right;
+            margin-right: 0;
+            margin-left: 1vw;
+        }
+
+        .h-card .image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .h-card .text-block {
+            width: calc(90% - 115px);
+            display: inline-block;
+            vertical-align: top;
+            font-size: 55%;
+        }
+
+        .h-card h3 {
+            margin-top: 0;
+            font-size: 14px;
+        }
+
+        .fnsize {
+            font-size: 14px;
+            text-align: justify;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 2vh;
+            font-size: 1vw;
+            clear: both;
+            padding: 1vh 0;
+        }
+    </style>
 </head>
 
 <body>
-    <a href="begin.html"><big>Самые лучшие автомобили</big></a>
-    <br><a href="table.html"><small>Список самых лучших автомобилей</small></a>
-    <hr>
-    <a href="1_car_page.html"><img src="https://i.pinimg.com/736x/3d/9b/2c/3d9b2c5f0724bc8ca939c0a664b5587c.jpg"
-            hspace="10" height="150"></a>
-    <a href="2_car_page.html"><img src="https://s.rdrom.ru/1/pubs/4/25103/1204874.jpg" hspace="10" height="150"></a>
-    <a href="3_car_page.html"><img src="https://s.rdrom.ru/1/pubs/4/25103/1204880.jpg" hspace="10" height="150"></a>
-    <a href="4_car_page.html"><img src="https://s.rdrom.ru/1/pubs/4/25103/1204876.jpg" hspace="10" height="150"></a>
-    <a href="5_car_page.html"><img src="https://s.rdrom.ru/1/pubs/4/25103/1204878.jpg" hspace="10" height="150"></a>
-    <hr>
-    <img src="https://s.rdrom.ru/1/pubs/4/25103/1204870.jpg" height="300" align="middle"> <big><b>Bugatti Veyron
-            (2005)</b></big>
-    <p>
-        Bugatti Veyron — гиперкар компании Bugatti, производившийся с 2005 по 2015 год. Назван в честь французского
-        легендарного гонщика Пьера Вейрона, победителя 1939 года в гонках 24 часа Ле-Мана. В 2010 году журналы Top Gear
-        и Robb Report присудили награду «Автомобиль десятилетия» Bugatti Veyron и модификации Grand Sport
-        соответственно. Модификация Super Sport в 2010 году побила мировой рекорд скорости и стала самым быстрым
-        серийным автомобилем в мире.<br>Производство Veyron на данный момент завершено, всего было продано 450
-        автомобилей: 300 купе и 150 родстеров. Его преемником является Bugatti Chiron, официально представленный на
-        женевском автосалоне в 2016 году.</p>
-    <img src="https://s.rdrom.ru/1/pubs/4/25103/1204872.jpg" height="300" align="middle"><big><b>Volkswagen Golf GTI
-            (2005)
-        </b></big>
-    <p>Volkswagen Golf Mk5 (кодовое название Typ 1K) — малый семейный автомобиль, выпускаемый и продаваемый компанией
-        Volkswagen как пятое поколение Golf в трёх- или пятидверном кузове хэтчбек (август 2003 — 2008) и пятидверном
-        кузове универсал (2007–2009), а также преемник Golf Mk4. Созданный на базе платформы Volkswagen Group A5 (PQ35),
-        Mk5 дебютировал на Франкфуртском автосалоне в октябре 2003 года и поступил в продажу в Европе в 2004 году. Хотя
-        в США и Канаде Golf Mk5 продавался как Volkswagen Rabbit, модель GTI в этих странах продавалась как Volkswagen
-        GTI.</p>
-    <img src="https://avatars.mds.yandex.net/i?id=073e55d1f3f793208e2f20bc4047cf17_l-9138034-images-thumbs&n=13"
-        height="300" width="500" align="middle"><big><b>Rolls-Royce Phantom (2003)</b></big>
-    <p>
-        Rolls-Royce Phantom — полноразмерный роскошный седан производства Rolls-Royce Motor Cars. Выпущенный в 2003
-        году, он стал первым автомобилем Rolls-Royce, разработанным и представленным после того, как BMW приобрела право
-        использовать название и логотип Rolls-Royce в 1998 году. Это была седьмая модель Rolls-Royce с названием
-        Phantom. Ему приписывают успешное возрождение бренда Rolls-Royce и восстановление репутации Rolls-Royce как
-        производителя роскошных автомобилей. Phantom Drophead Coupé и Phantom Coupé — это двухдверные модификации
-        Phantom, выпущенные в 2007 и 2008 годах соответственно. С 2003 года и до выпуска более компактной модели Ghost в
-        2009 году Phantom был единственным автомобилем, выпускаемым Rolls-Royce. Phantom был флагманской моделью
-        компании, но менее эксклюзивной, чем все предыдущие модели Phantom (ни одна из которых не выпускалась в
-        количестве более 600 экземпляров в год).Производство автомобиля было прекращено в январе 2017 года, а
-        Rolls-Royce Phantom VIII был выпущен позже в том же году.</p>
+    <div class="wrapper_head">
+        <div class="menu">
+            <a href="begin.html" class="active">Самые лучшие автомобили</a><a href="table.html">Список самых лучших
+                автомобилей</a><a href="#">Меню 3</a><a href="#">Меню 4</a>
+        </div>
+
+        <div class="top">
+            <div class="left">
+                <a href="1_car_page.html"><img src="https://s.rdrom.ru/1/pubs/4/25103/1204874.jpg"></a>
+            </div>
+            <div class="right">
+                <a href="2_car_page.html"><img
+                        src="https://i.pinimg.com/736x/3d/9b/2c/3d9b2c5f0724bc8ca939c0a664b5587c.jpg"></a>
+                <a href="3_car_page.html"><img
+                        src="https://avatars.mds.yandex.net/i?id=073e55d1f3f793208e2f20bc4047cf17_l-9138034-images-thumbs&n=13"></a>
+            </div>
+        </div>
+
+        <div class="wide">
+            <a href="4_car_page.html"><img src="https://s.rdrom.ru/1/pubs/4/25103/1204872.jpg"></a>
+        </div>
+    </div>
+    <div class="wrapper_main">
+        <div class="cards">
+            <div class="card brown">
+                <h3>McLaren P1</h3>
+                <div class="text fnsize">McLaren P1 — английский суперкар с гибридным двигателем, преемник McLaren F1.
+                </div>
+                <div class="image">
+                    <img
+                        src="https://avatars.mds.yandex.net/i?id=b65dcc60092f06ebb9097701e7cd635bd4911e17-15286282-images-thumbs&n=13">
+                </div>
+                <a href="#">Подробнее»</a>
+            </div>
+
+            <div class="card brown">
+                <h3>Bugatti Veyron</h3>
+                <div class="text fnsize">Bugatti Veyron — гиперкар компании Bugatti, производившийся с 2005 по 2015 год.
+                </div>
+                <div class="image">
+                    <img
+                        src="https://avatars.mds.yandex.net/i?id=57eda4d86d1470432212df9e1fd42685dd098e7f-4289847-images-thumbs&n=13">
+                </div>
+                <a href="#">Подробнее»</a>
+            </div>
+
+            <div class="h-card brown left-image">
+                <div class="image">
+                    <img
+                        src="https://avatars.mds.yandex.net/i?id=85f55d9d10d973ea92dffe648b24e31c139be20b-16415947-images-thumbs&n=13">
+                </div>
+                <div class="text-block">
+                    <h3>Mini Cooper</h3>
+                    <div class="text">Mini — марка малолитражных автомобилей, разработанная в Великобритании компанией
+                        British Motor Corporation.</div>
+                    <a href="#">Подробнее»</a>
+                </div>
+            </div>
+
+            <div class="h-card brown left-image">
+                <div class="image">
+                    <img
+                        src="https://avatars.mds.yandex.net/i?id=52648c3eb782dda71f50e8f45dc409ae_l-5332335-images-thumbs&n=13">
+                </div>
+                <div class="text-block">
+                    <h3>Toyota Prius</h3>
+                    <div class="text">Toyota Prius — первый в мире массовый гибридный легковой автомобиль.</div>
+                    <a href="#">Подробнее»</a>
+                </div>
+            </div>
+
+            <div class="card pink">
+                <div class="image">
+                    <img
+                        src="https://avatars.mds.yandex.net/i?id=96f6dcde3a1b65d6bd8ed6fb3823eed8_l-16290156-images-thumbs&n=13">
+                </div>
+                <h3>Nissan GT-R</h3>
+                <div class="text fnsize">Nissan GT-R — суперкар, выпускаемый компанией Nissan Motor.</div>
+                <a href="#">Подробнее»</a>
+            </div>
+
+            <div class="card pink">
+                <div class="image">
+                    <img
+                        src="https://avatars.mds.yandex.net/i?id=17e003ec524357cf717a3d0a76fe25e4_l-5088908-images-thumbs&n=13">
+                </div>
+                <h3>Ford Fiesta</h3>
+                <div class="text fnsize">Ford Fiesta — субкомпактный автомобиль, выпускавшийся компанией Ford Motor
+                    Company.</div>
+                <a href="#">Подробнее»</a>
+            </div>
+
+            <div class="h-card pink right-image">
+                <div class="text-block">
+                    <h3>Mitsubishi Lancer</h3>
+                    <div class="text">Mitsubishi Lancer — семейство легковых автомобилей субкомпактного и компактного
+                        класса, выпускавшихся с 1973 по 2024 год.</div>
+                    <a href="#">Подробнее»</a>
+                </div>
+                <div class="image">
+                    <img
+                        src="https://avatars.mds.yandex.net/i?id=fb4e2db359f320db6e6cce6b60c6e6205d029575-5314878-images-thumbs&n=13">
+                </div>
+            </div>
+
+            <div class="h-card pink right-image">
+                <div class="text-block">
+                    <h3>Subaru Impreza</h3>
+                    <div class="text">Седан, универсал, купе или хетчбэк японской фирмы Subaru, выпускается с 1992 года.
+                    </div>
+                    <a href="#">Подробнее»</a>
+                </div>
+                <div class="image">
+                    <img
+                        src="https://avatars.mds.yandex.net/i?id=94ad984efbd08e9b112be6e2db0ad3519be20446-12679713-images-thumbs&n=13">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>2025 1 Акимов. С. Н.</footer>
 </body>
 
 </html>
