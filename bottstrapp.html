@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Классная работа Bootstrap</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.20.0/css/mdb.min.css" rel="stylesheet">
+    <style>
+
+        .hover-zoom {
+            transition: transform 0.3s ease;
+        }
+
+        .hover-zoom:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md bg-light navbar-light">
+            <a class="navbar-brand" href="#">Топ автомобилей 21 века</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Самые лучшие автомобили</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Список самых лучших автомобилей</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+    <div class="container">
+        <div class="row top mt-3 g-0">
+            <div class="col-12 col-md-8 left">
+                <img src="/images/1204874.webp" class="w-100 hover-zoom h-100">
+            </div>
+            <div class="col-12 col-md-4 d-flex flex-column">
+                <img src="/images/3d9b2c5f0724bc8ca939c0a664b5587c (1).jpg" class="hover-zoom">
+                <img src="/images/i.webp" class="hover-zoom h-75">
+            </div>
+        </div>
+        <div class="row g-0">
+            <div class="col-12 wide">
+                <img src="/images/1204872.webp" class="hover-zoom w-100">
+            </div>
+        </div>
+
+        <div class="row mb-3 mt-4">
+            <div class="col-12 col-md-1"></div>
+            <div class="col-12 col-md-3">
+                <div class="card mt-1 w-100 border-0 bg-light h-100">
+                    <div class="card-body">
+                        <h5 class="card-title text-black text-center">McLaren P1</h5>
+                        <p class="card-text lead">Английский суперкар с гибридным двигателем, преемник McLaren F1,
+                            который производила компания McLaren Automotive.</p>
+                    </div>
+                    <img src="/images/i (1).webp" class="card-img-top h-75">
+                    <a href="#" class="text-primary text-decoration-underline">Подробнее</a>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="card mt-1 w-100 border-0 bg-light h-100">
+                    <div class="card-body">
+                        <h5 class="card-title text-black text-center">Bugatti Veyron</h5>
+                        <p class="card-text lead">Гиперкар компании Bugatti, производившийся с 2005 по 2015 год. Назван
+                            в честь французского легендарного гонщика Пьера Вейрона, победителя 1939 года в гонках 24
+                            часа Ле-Мана.</p>
+                    </div>
+                    <img src="/images/i (2).webp" class="card-img-top h-75">
+                    <a href="#" class="text-primary text-decoration-underline">Подробнее</a>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card mb-1 w-100 border-0 bg-light h-50">
+                    <div class="row g-0 h-100">
+                        <div class="col-md-4">
+                            <img src="/images/i (3).webp" class="card-img-top rounded-start h-100">
+                        </div>
+                        <div class="col-12 col-md-2 mt-4">
+                            <h5 class="text-black text-center">Mini Cooper</h5>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="card-body">
+                                <p class="card-text">Марка малолитражных автомобилей, разработанная в Великобритании
+                                    компанией British Motor Corporation в 1958 году.</p>
+                                <a href="#" class="text-primary text-decoration-underline">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 w-100 border-0 bg-light h-50">
+                    <div class="row g-0 h-100">
+                        <div class="col-md-4">
+                            <img src="/images/i (4).webp" class="card-img-top rounded-start h-100">
+                        </div>
+                        <div class="col-12 col-md-2 mt-4">
+                            <h5 class="text-black text-center">Toyota Prius</h5>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="card-body">
+                                <p class="card-text">Гибридный легковой автомобиль, выпускавшийся японской фирмой Toyota
+                                    с 2009 по 2015 годы. Латинское слово prius в названии модели трактуется как первый,
+                                    изначальный.</p>
+                                <a href="#" class="text-primary text-decoration-underline">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-1"></div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-12 col-md-1"></div>
+            <div class="col-12 col-md-3">
+                <div class="card mt-1 w-100 border-0 bg-light h-100">
+                    <img src="/images/i (5).webp" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title text-black text-center">Mitsubishi Lancer</h5>
+                        <p class="card-text lead">Mitsubishi Lancer — семейство легковых автомобилей субкомпактного и
+                            компактного класса, выпускавшихся с 1973 по 2024 год.</p>
+                        <a href="#" class="text-primary text-decoration-underline">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="card mt-1 w-100 border-0 bg-light h-100">
+                    <img src="/images/i (6).webp" class="card-img-top h-50">
+                    <div class="card-body">
+                        <h5 class="card-title text-black text-center">Subaru Impreza</h5>
+                        <p class="card-text lead">Спортивный седан/хетчбэк производства компании Subaru с более мощным
+                            двигателем и другими настройками подвески, в отличие от младшего собрата WRX.</p>
+                        <a href="#" class="text-primary text-decoration-underline">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card mb-1 w-100 border-0 bg-light h-50">
+                    <div class="row g-0 h-100">
+                        <div class="col-12 col-md-2 mt-4">
+                            <h5 class="text-black text-center">Ford Fiesta</h5>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="card-body">
+                                <p class="card-text">Субкомпактный автомобиль, выпускавшийся компанией Ford Motor
+                                    Company. Производится в Европе, Бразилии, Аргентине, Мексике, Венесуэле, Китае,
+                                    Индии, Таиланде и Южной Африке.</p>
+                                <a href="#" class="text-primary text-decoration-underline">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <img src="/images/i (7).webp" class="card-img-top rounded-start h-100">
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 w-100 border-0 bg-light h-50">
+                    <div class="row g-0 h-100">
+                        <div class="col-12 col-md-2 mt-4">
+                            <h5 class="text-black text-center">Nissan GT-R</h5>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="card-body">
+                                <p class="card-text">Суперкар, выпускаемый компанией Nissan Motor. Представлен в
+                                    качестве серийной модели в Токийском автосалоне 24 октября 2007 года, продажи
+                                    начались в 2008 году в Японии, затем в США и Европе.</p>
+                                <a href="#" class="text-primary text-decoration-underline">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <img src="/images/i (8).webp" class="card-img-top rounded-start h-100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
