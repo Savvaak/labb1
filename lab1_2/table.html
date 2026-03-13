@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Таблица автомобилей</title>
+    <script src="data.js"></script>
+    <script src="table.js"></script>
+    <script src="filter.js"></script>
+    <script src="sort.js"></script>
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <a href="begin.html">
+        <small>Самые лучшие автомобили</small>
+    </a><br>
+    <a href="table.html">
+        <big>Список самых лучших автомобилей</big>
+    </a>
+    <hr>
+    
+    <details>
+        <summary>Фильтр</summary>
+        <form id="filter">
+            <p>
+                <label>Название:
+                    <input type="text" id="name">
+                </label>
+            </p>
+            <p>
+                <label>Страна:
+                    <input type="text" id="country">
+                </label>
+            </p>
+            <p>
+                <label>Модель двигателя:
+                    <input type="text" id="engine">
+                </label>
+            </p>
+            <p>
+                <label>Год: от
+                    <input type="number" id="yearFrom">
+                </label>
+                <label>до
+                    <input type="number" id="yearTo">
+                </label>
+            </p>
+            <p>
+                <label>Объём двигателя: от
+                    <input type="number" id="volumeFrom" step="0.1">
+                </label>
+                <label>до
+                    <input type="number" id="volumeTo" step="0.1">
+                </label>
+            </p>
+            <p>
+                <label>Разгон до 100 км/ч: от
+                    <input type="number" id="accelFrom" step="0.1">
+                </label>
+                <label>до
+                    <input type="number" id="accelTo" step="0.1">
+                </label>
+            </p>
+            <input type="button" id="fin" value="Найти">
+            <input type="button" id="cl" value="Сбросить">
+        </form>
+    </details>
+    
+    <details>
+        <summary>Сортировка</summary>
+        <form id="sort">
+            <p>
+                Первый уровень:
+                <select id="fieldsFirst">
+                </select>
+                по убыванию? <input type="checkbox" id="fieldsFirstDesc">
+            </p>
+            <p>
+                Второй уровень:
+                <select id="fieldsSecond">
+                </select>
+                по убыванию?
+                <input type="checkbox" id="fieldsSecondDesc">
+            </p>
+            <p>
+                Третий уровень:
+                <select id="fieldsThird">
+                </select>
+                по убыванию?
+                <input type="checkbox" id="fieldsThirdDesc">
+            </p>
+            <input type="button" id="sortBtn" value="Сортировать">
+            <input type="button" id="clearSort" value="Сбросить сортировку">
+        </form>
+    </details>
+    
+    <table id="list" border="2" cellspacing="0" cellpadding="5">
+    </table>
+</body>
+</html>
